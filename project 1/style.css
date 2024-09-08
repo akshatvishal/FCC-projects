@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+body{
+    display: grid;
+    color: var(--color-white);
+    
+}
+
+.container{
+    margin: 3.125rem auto 0 auto;
+    height: 1526px;
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+form{
+    padding: 40px;
+    background-color: var(--color-darkblue-alpha);
+    width: 640px;
+    border-radius: 3px;
+    
+}
+.header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px;
+    margin: 0px 0px 30px;
+}
+#title{
+    position: relative;
+    left: 35px;
+    color: #f3f3f3;
+    margin: 0px 0px 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+#description{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: #f3f3f3;
+    font-size: 18px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin: 0px 0px 20px;
+}
+.checkbox{
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 0px 8px;
+}
+put-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
